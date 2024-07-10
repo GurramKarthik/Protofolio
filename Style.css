@@ -1,0 +1,173 @@
+body{
+    margin: 0;
+    background-color: #cdd5db;
+    width:auto;
+    
+}
+
+
+.header{
+    height: 80px;
+    width: 100%;
+
+    padding: 0px;
+    background-color: #4b6382;
+    display: flex;
+    flex-wrap:wrap;    
+    align-items: center;
+    position:fixed;
+    z-index: 2;
+
+    animation: headerDrop 1s linear 0s 1 normal ;
+    
+    
+    
+
+}
+
+@keyframes headerDrop{
+    from{
+        height: 0px;
+        top: -20px;
+
+    }to{
+        height: 80px;
+        top: 0px;
+        
+    }
+}
+
+.head_name{
+    
+    color: white;
+    position: absolute;
+    left: 5rem;
+}
+
+.nav_options{
+    position: absolute;
+    right: 2rem;
+  
+}
+
+.nav_options a{
+    color: #cdd5db;
+    margin: 0 0.3rem 0 0.3rem;
+    align-self: baseline;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.nav_options a:hover{
+    color: #e3c39d;
+    transform: scale(1);
+    transition-duration: 0.2s;
+    /* background-color: # ; */
+
+    
+    padding: 2px;
+    transition-property: color;
+
+    
+}
+
+
+.Home{
+    
+    height:fit-content;
+    position: relative;
+
+  
+    top: 80px;   
+    background-color: #a4b5c4;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    opacity: 0;
+    animation-name: homeOpacity;
+    animation-duration: 2s;
+    opacity: 1;
+
+    
+}
+
+@keyframes homeOpacity{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+
+.about{
+
+    width: 50%;
+    padding: 20px;
+    margin-top: 40px;  
+
+    animation: aboutLoader 1.5s linear 1 normal forwards;
+    opacity: 1;
+
+    
+}
+
+
+@keyframes aboutLoader{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+
+    }
+}
+
+
+.about span{
+    font-size: larger;
+}
+
+
+.nav_connect a{
+    color: #ccd0cf;
+    text-decoration: none;
+    margin: 0.4rem;
+    font-size: 1.5rem;
+}
+
+.about button{
+    
+    width: 10rem;
+    padding: 0.5rem;
+    background-color: #4a5c6a;
+    margin-top: 20px;
+
+    border: none;
+    border-radius: 10px ;
+
+  
+
+}
+
+.photo {
+   
+    /* align-self: center ; */
+    justify-self: left;
+    padding: 20px 0px 20px 0px;    
+}
+
+.photo img{
+
+    width: 300px;
+    height: 25rem;
+    
+
+}
+
+
